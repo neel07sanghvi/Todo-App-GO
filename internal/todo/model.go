@@ -69,7 +69,7 @@ func (t *Todo) MarkCompleted() {
 	// cannot take the address of time.Now()
 }
 
-func (t *Todo) MarkInComplete() {
+func (t *Todo) MarkIncomplete() {
 	t.Completed = false
 	t.CompletedAt = nil
 }

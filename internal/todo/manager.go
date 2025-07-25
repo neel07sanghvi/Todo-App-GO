@@ -99,6 +99,17 @@ func (tm *TodoManager) CompleteTodo(id int) bool {
 	return true
 }
 
+// IncompleteTodo marks a todo as incomplete
+func (tm *TodoManager) IncompleteTodo(id int) bool {
+	todo, exists := tm.todos[id]
+	if !exists {
+		return false
+	}
+
+	todo.MarkIncomplete()
+	return true
+}
+
 // GetTodo retrieves a specific todo by ID
 func (tm *TodoManager) GetTodo(id int) (*Todo, bool) {
 	todo, exists := tm.todos[id]

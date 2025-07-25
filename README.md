@@ -54,6 +54,7 @@ go run .
 - `update <id> <new_task>` - Update an existing todo item
 - `delete <id>` - Delete a todo item
 - `complete <id>` - Mark a todo item as completed
+- `incomplete <id>` - Mark a todo item as incomplete
 - `help` - Show help message
 - `exit` or `quit` - Exit the application
 
@@ -75,6 +76,9 @@ Total: 2 | Completed: 0 | Remaining: 2
 
 > complete 1
 Todo with ID 1 marked as completed
+
+> incomplete 1
+Todo with ID 1 marked as incomplete
 
 > update 2 Schedule dentist appointment
 Todo with ID 2 updated successfully
